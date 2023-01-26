@@ -1,2 +1,7 @@
-#import * as component from "./component.js"
-#export component
+import { 
+    setTimeFrameMS, 
+    create,
+    assertValidity 
+    } from "./validatabletimestampmodule.js"
+
+export { setTimeFrameMS, create, assertValidity }
