@@ -1,6 +1,6 @@
 {
     "name": "validatabletimestamp",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "description": "Creates and validates timestamps, being verifiable within a specified timeframe.",
     "main": "index.js",
     "scripts": {
@@ -14,7 +14,7 @@
         "timeframe"
     ],
     "author": "Lenard Frommelt lenard@frommelt.dev",
-    "license": "Unlicense",
+    "license": "CC0",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/JhonnyJason/validatabletimestamp-output.git"
