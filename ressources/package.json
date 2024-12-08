@@ -1,22 +1,28 @@
 {
-  "name": "validatabletimestamp",
-  "version": "0.0.1",
-  "description": "Creates and validates timestamps, being verifiable within a specified timeframe.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": ["thingy", "timestamp", "validate", "verify", "timeframe"],
-  "author": "Lenard Frommelt lenard@frommelt.dev",
-  "license": "Unlicense",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JhonnyJason/validatabletimestamp-output.git"
-  },
-  "bugs": {
-    "url": "https://github.com/JhonnyJason/validatabletimestamp/issues"
-  },
-  "homepage": "https://github.com/JhonnyJason/validatabletimestamp-output#readme",
-  "dependencies": {},
-  "type": "module"
+    "name": "validatabletimestamp",
+    "version": "0.0.2",
+    "description": "Creates and validates timestamps, being verifiable within a specified timeframe.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "thingy",
+        "timestamp",
+        "validate",
+        "verify",
+        "timeframe"
+    ],
+    "author": "Lenard Frommelt lenard@frommelt.dev",
+    "license": "Unlicense",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JhonnyJason/validatabletimestamp-output.git"
+    },
+    "bugs": {
+        "url": "https://github.com/JhonnyJason/validatabletimestamp/issues"
+    },
+    "homepage": "https://github.com/JhonnyJason/validatabletimestamp-output#readme",
+    "dependencies": {},
+    "type": "module"
 }
