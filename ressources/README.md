@@ -29,12 +29,14 @@ npm install validatabletimestamp
 
 Use
 -----------
-- Specify the size of your timeframe you are willing to accept via `setTimeFrameMS(yourMS)`
+- Specify the size of your timeframe you are willing to accept via `setTimeFrameMS(yourMS)` -> If you set this, make sure that you do this on both sides to keep compatibility. A reasonable default is 180s = 3m
 - Use it to create a validatabletimestamp via `create()`
-- Use it to validate said timestamp via `assertValidity(stamp)`
+- Use it to validate said timestamp via `checkValidity(stamp)` or `assertValidity(stamp)`
+- Be aware: `checkValidity(stamp)` returns falsy when being valid and the truly string `"invalid"` when being invalid
+- Be aware: `assertValidity(stamp)` throws an error when being invalid
   
 ```coffee
-import { setTimeFrameMS, create, assertValidity } from "validatabletimestamp"
+import { setTimeFrameMS, create, checkValidity, assertValidity } from "validatabletimestamp"
 
 # setting the timeFrame to 20s - default is 180s
 setTimeFrameMS(20000)
@@ -42,16 +44,24 @@ setTimeFrameMS(20000)
 # create the timestamp
 stamp = create()
 
+# err should be undefined here
+err = checkValidity(stamp)
 # validate it - definitely is fine here
 assertValidity(stamp)
 
+
 ## wait 20s
 
+# err should still be undefined here
+err = checkValidity(stamp)
 # validate it - also should be fine here
 assertValidity(stamp)
 
+
 ## wait 20s
 
+# err should be "invalid" now
+err = checkValidity(stamp)
 # validate it - now throws "Invalid Timestamp!"
 assertValidity(stamp)
 

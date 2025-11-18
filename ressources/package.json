@@ -1,6 +1,6 @@
 {
     "name": "validatabletimestamp",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Creates and validates timestamps, being verifiable within a specified timeframe.",
     "main": "index.js",
     "scripts": {
